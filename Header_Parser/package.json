@@ -1,0 +1,25 @@
+{
+  "name": "header_parser",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+     "start": "node index.js",
+     "dev": "nodemon index.js"
+  },
+  "author": "freeCodeCamp <team@freecodecamp.org>",
+  "license": "MIT",
+  "keywords": [
+    "freeCodeCamp",
+    "node",
+    "express"
+  ],
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  },
+  "dependencies": {
+    "cors": "^2.8.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.18.1"
+  }
+}
