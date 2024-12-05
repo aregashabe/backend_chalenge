@@ -35,7 +35,7 @@ app.get("/api/:date?", function (req, res) {
     // If dateParam is a number, treat it as a Unix timestamp
     date = new Date(parseInt(dateParam));
   } else {
-    // Attempt to parse the date string
+    // Attempt to parse the date string (e.g., ISO date)
     date = new Date(dateParam);
   }
 
@@ -44,7 +44,7 @@ app.get("/api/:date?", function (req, res) {
     return res.json({ error: 'Invalid Date' });
   }
 
-  // Return the response with the Unix timestamp and UTC formatted date
+  // Return the response with the Unix timestamp (in milliseconds) and UTC formatted date
   res.json({ unix: date.getTime(), utc: date.toUTCString() });
 });
 
